@@ -45,7 +45,7 @@ class TasksManager:
             filtered_tasks = [task for task in self.tasks if task["done"] == filter_by_status]
 
         for task in filtered_tasks:
-            status = "done" if task["done"] else "not done"
+            status = "Выполнено" if task["done"] else "Не выполнено"
             print(
                 f"[{task['id']}] {task['title']} | Статус: {status} | Приоритет: {task['priority']} | Срок: {task['due_date']}")
 
