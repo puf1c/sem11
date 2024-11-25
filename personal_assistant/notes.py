@@ -46,7 +46,7 @@ class NotesManager:
             note_id = int(input("Введите ID заметки: "))
             note = next((n for n in self.notes if n["id"] == note_id), None)
             if note:
-                print(f"Заголовок: {note['title']}\nСодержимое: {note['content']}\nДата: {note['timestamp']}")
+                print(f"Заголовок: {note['title']}\nСодержимое : {note['content']}\nДата: {note['timestamp']}")
             else:
                 print("Заметка не найдена.")
         except ValueError:
